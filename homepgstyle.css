@@ -4,11 +4,14 @@
     font-family: 'Poppins', sans-serif;
     
 }
-.bg{
+/*.bg{
     background: url(/images/cool-background.png);
-    z-index: -2;
+    z-index: -1;
     background-repeat: no-repeat;
     
+}*/
+body{
+    background-color: whitesmoke;
 }
 .header{
     background: rgb(0, 0, 0);
@@ -18,6 +21,7 @@
     min-height: 10vh;
     width: 100%; 
     position: relative;
+    
 }
 .about{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/abadha\ air.jpg);
@@ -26,6 +30,7 @@
     min-height: 100vh;
     width: 100%; 
     position: relative;
+    margin-bottom: 20px;
 }
 
 nav{
@@ -37,20 +42,24 @@ nav{
 }
 nav img{
     width: 150px;
+    
 }
 .nav-links{
     flex: 1;
     text-align: right;
 }
 .nav-links ul li{
-    list-style: none;
+    
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    font-weight: 100px;
+    font-family: cursive;
+
 }
 .nav-links ul li a{
     color: #ffffff;
-    text-decoration: lightgrey;
+    text-decoration: rgb(126, 126, 126);
     font-size: 13px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -77,21 +86,29 @@ nav img{
     
 }
 .text-box h1{
-    font-size: 36px;
+    /*font-size: 36px;
     font-weight: 400;
     font-family: fantasy;
-    color: rgb(255, 255, 254);
+    color: wheat;*/
+    text-align: center;
+  margin-top: 30px;
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: 40px;
+  color: coral;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .text-box p{
     margin:10px 0 40px;
-    font-size: 14px;
-    color: rgb(247, 222, 222);
+    color: rgb(250, 222, 171);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
 }
 .hero-btn{
     display: inline;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(155, 148, 148);
     padding: 12px 34px ;
     font-size: 13px;
     background: transparent;
@@ -135,15 +152,23 @@ nav .fa{
     .nav-links ul{
         padding: 30px;
     }
+    .hero-btn:hover{
+        border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    }
 }
 
 
 /*----Goals----*/
 .goals{
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
+    background-color: wheat;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 h1{
     font-size: 36px;
@@ -152,6 +177,7 @@ h1{
     line-height: 22px;
     padding: 20px;
     margin: auto;
+    color: darkslategray;
 }
 .goals p{
     color: #777; 
@@ -162,32 +188,51 @@ h1{
     
 }
 
-
+/*
 .row{
     margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     justify-content: space-between;
     
-}
+}*/
 
 .goals-col{
     flex-basis: 21%;
-    background: #ffe9e9;
-    border-radius: 10px;
+    background: #ffffff;
+    border-radius: 20px;
     margin-bottom: 5%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
 }
-
+.row {
+    margin-top:5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 2em;
+    grid-row: inherit;
+    
+  }
+  
+ /* .row :first-child {
+      align-self: center;
+  }*/
 h3{
 color: rgba(4,9,30,0.7);
 text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
 font-weight: 600;
 margin: 10px 0;
+font-size: 15px;
 }
 .goals-col:hover{
-    box-shadow: 0 0 20px 0px rgba(255, 154, 154, 0.7);
+    box-shadow: 0 0 30px 0px rgba(189, 189, 189, 0.7);
 }
 
 @media(max-width:700px){
@@ -198,19 +243,25 @@ margin: 10px 0;
         font-size: 30px;
         font-weight: 600;
     }
-    h3{
-        font size: 12px;
+    .goals-col h3{
+        font-size: 12px;
     }
 }
 
 /*------------Campus------------*/
 .campus{
     width: 80%;
-    margin: auto;
+    margin:  auto ;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color: rgba(4,9,30,0.7);
+    background-color: wheat;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.campus p{
+    margin: 20px 20px 20px 20px;
 }
 .campus h1{
     text-align: center;
@@ -233,19 +284,24 @@ margin: 10px 0;
 }
 
 .cta{
-    margin: 100px auto;
+    margin: 70px auto;
     width: 80%;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/images/abadha\ 1.jpg);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/abadha\ 1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .cta h3{
     color: seashell;
     margin-bottom: 40px;
     padding: 0;
+}
+.cta p{
+    color: whitesmoke;
+    margin-bottom: 40px;
 }
 @media(max-width: 700px){
     .cta h3{
@@ -260,6 +316,12 @@ margin: 10px 0;
         margin-bottom: 30px;
         position: relative;
         overflow: hidden;
+    }
+    .campus-col img{
+        width:70%;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
     }
 }
 /* footer */
@@ -276,9 +338,20 @@ margin: 10px 0;
     font-weight: 600;
     
 }
+.footer p{
+    color: #777;
+}
+.footer h4{
+    font-weight: 80px;
+    font-family: cursive;
+    color: darkslategray;
+}
+.footer h3{
+    color: darkslategray;
+}
 .footer img{
      height: 70px;
-     padding-top: 50px;
+     
 }
 .icons .fa{
     color: tomato;
@@ -288,5 +361,33 @@ margin: 10px 0;
 }
 
 hr {
-     background-color: rgba(255, 154, 154, 0.7); height: 1px; border: 0; 
+     background-color: rgb(197, 196, 196); height: 1.5px; border: 0;
+     margin-top: 50px; 
+     margin-bottom: 50px;
+     
     }
+
+/*---------------About Section----------------*/
+
+.location{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.location video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+
+
+
+
+
+
+
+
