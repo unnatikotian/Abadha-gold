@@ -24,7 +24,7 @@ body{
     
 }
 .about{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/abadha\ air.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/Abadha-gold/images/abadha\ air.jpg);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
