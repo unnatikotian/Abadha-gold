@@ -15,14 +15,14 @@
     width: 100%; 
     position: relative;
 }
-.about{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img16.jpg);
+/*.about{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images2/abadha\ air.jpg);
     background-position: center;
     background-size: cover;
     min-height: 100vh;
     width: 100%; 
     position: relative;
-}
+}*/
 
 nav{
     
@@ -71,7 +71,7 @@ nav img{
     text-align: center;
 }
 .text-box h1{
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600
 }
 .text-box p{
@@ -137,7 +137,7 @@ nav .fa{
 
 
 body{
-    /*background: linear-gradient(white,grey,black);*/
+    background-color:whitesmoke;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -149,8 +149,10 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #eb4511;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(315deg,#ed5411 0%,#b02e0c 74%);
+    
 }
 
 .team .timeline h3{
@@ -177,10 +179,12 @@ body{
 
 .wrapper{
     margin-top: 5%;
+    border-radius: 10px;
 }
 .wrapper h1{
     font-family: 'Allura', cursive;
-    font-size: 90px;
+    font-size: 80px;
+    font-weight: 600px;
     margin-bottom: 30px;
     text-align: center;
     color: lightcoral;
@@ -227,6 +231,7 @@ body{
     line-height: 20px;
     color: darkblue;
     position: relative;
+    
 }
 .team .timeline:hover{
     font-size: 20px;
@@ -235,8 +240,8 @@ body{
 
 .team .timeline h3{
     color: blue;
-    font-size: 40px;
-    margin-top: 45px;
+    font-size: 30px;
+    margin-top: 55px;
 }
 .team .timeline p .ach{
     color: darkred;
@@ -250,7 +255,7 @@ body{
 }
 .team .timeline p .para{
     color: cyan;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 15px;
 }
 .team .timeline:hover{
@@ -274,7 +279,7 @@ body{
     height: 250px;
 }
 
-
+/*
 .footer{
     width: 100%;
     text-align: center;
@@ -298,6 +303,41 @@ body{
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+}*/
+/* footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px 0;
+    padding-bottom: 20px 0;
 }
 
+.footer h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+.footer p{
+    color: #777;
+}
+.footer h4{
+    font-weight: 80px;
+    font-family: cursive;
+    color: darkslategray;
+}
+.footer h3{
+    color: darkslategray;
+    font-size: 15px;
+}
+.footer img{
+     height: 110px;
+     padding-top: 50px;
+}
+.icons .fa{
+    color: tomato;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
 

@@ -1,5 +1,5 @@
 body{
-    background-color:black;
+    background-color:rgb(255, 246, 228);
 }
 h1{
   text-align: center;
@@ -11,8 +11,8 @@ h1{
 }
 p{
   text-align: center;
-  font-size: 25px;
-  color: wheat;
+  font-size: 20px;
+  color: rgb(71, 71, 71);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .gallery{
@@ -27,16 +27,19 @@ p{
   flex-grow: 1;
   flex-basis: 0;
   transition: 0.5s;
-
+  margin: 10px 50px 10px 50px;
+  
 }
 .image-box img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  
 }
 .image-box:hover{
-  flex-basis: 10%;
+  flex-basis: 3%;
 }    
 .active{
   flex-basis: 10%;
@@ -175,7 +178,8 @@ nav .fa{
   }
 }
 /* footer */
-.footer{
+
+/*.footer{
   width: 100%;
   text-align: center;
   padding-top: 30px 0;
@@ -190,6 +194,41 @@ nav .fa{
 }
 .footer img{
    height: 70px;
+}
+.icons .fa{
+  color: tomato;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}*/
+/* footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  padding-top: 30px 0;
+  padding-bottom: 20px 0;
+}
+
+.footer h4{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-weight: 600;
+  
+}
+.footer p{
+  color: #777;
+}
+.footer h4{
+  font-weight: 80px;
+  font-family: cursive;
+  color: darkslategray;
+}
+.footer h3{
+  color: darkslategray;
+}
+.footer img{
+   height: 70px;
+   padding-top: 50px;
 }
 .icons .fa{
   color: tomato;
