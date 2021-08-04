@@ -149,14 +149,6 @@ nav .fa{
   display: none;
 }
 @media(max-width: 700px){
-  h1{
-    margin-top: 50px;
-    font-size: 20px;
-  }
-  p{
-    font-size: 12px;
-    margin: 20px;
-  }
   .text-box h1{
       font-size: 20px;
   }
@@ -242,20 +234,4 @@ nav .fa{
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
-}
-@media(max-width: 700px){
-  .footer h4{
-      margin-bottom: 5px;
-      margin-top: 10px;
-      font-weight: 600;
-  } 
-  .footer img{
-      height: 50px;    
- } 
- .icons .fa{
-  color: tomato;
-  margin: 0 7px;
-  cursor: pointer;
-  padding: 18px 0;
- }
 }
